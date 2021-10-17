@@ -30,7 +30,7 @@ U 1 1 616C295C
 P 2950 1450
 F 0 "R1" H 3020 1496 50  0000 L CNN
 F 1 "R" H 3020 1405 50  0000 L CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 2880 1450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2880 1450 50  0001 C CNN
 F 3 "~" H 2950 1450 50  0001 C CNN
 	1    2950 1450
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 616C4A88
 P 2950 2200
 F 0 "R2" H 3020 2246 50  0000 L CNN
 F 1 "R" H 3020 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 2880 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2880 2200 50  0001 C CNN
 F 3 "~" H 2950 2200 50  0001 C CNN
 	1    2950 2200
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 616C4D09
 P 850 2300
 F 0 "C1" H 965 2346 50  0000 L CNN
 F 1 "10n" H 965 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_01005_0402Metric" H 888 2150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 888 2150 50  0001 C CNN
 F 3 "~" H 850 2300 50  0001 C CNN
 	1    850  2300
 	1    0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 616C4E8E
 P 2950 2600
 F 0 "C3" H 3065 2646 50  0000 L CNN
 F 1 "C" H 3065 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder" H 2988 2450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2988 2450 50  0001 C CNN
 F 3 "~" H 2950 2600 50  0001 C CNN
 	1    2950 2600
 	1    0    0    -1  
@@ -186,7 +186,7 @@ U 1 1 616DFE22
 P 2950 4300
 F 0 "R3" H 3020 4346 50  0000 L CNN
 F 1 "R" H 3020 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 2880 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2880 4300 50  0001 C CNN
 F 3 "~" H 2950 4300 50  0001 C CNN
 	1    2950 4300
 	1    0    0    -1  
@@ -197,7 +197,7 @@ U 1 1 616DFE28
 P 2950 5050
 F 0 "R4" H 3020 5096 50  0000 L CNN
 F 1 "R" H 3020 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 2880 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2880 5050 50  0001 C CNN
 F 3 "~" H 2950 5050 50  0001 C CNN
 	1    2950 5050
 	1    0    0    -1  
@@ -208,7 +208,7 @@ U 1 1 616DFE2E
 P 850 5150
 F 0 "C2" H 965 5196 50  0000 L CNN
 F 1 "10n" H 965 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder" H 888 5000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 888 5000 50  0001 C CNN
 F 3 "~" H 850 5150 50  0001 C CNN
 	1    850  5150
 	1    0    0    -1  
@@ -219,7 +219,7 @@ U 1 1 616DFE34
 P 2950 5450
 F 0 "C4" H 3065 5496 50  0000 L CNN
 F 1 "C" H 3065 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder" H 2988 5300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2988 5300 50  0001 C CNN
 F 3 "~" H 2950 5450 50  0001 C CNN
 	1    2950 5450
 	1    0    0    -1  
@@ -460,17 +460,6 @@ F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74HC04 U4
-U 1 1 6171FDC0
-P 4200 5350
-F 0 "U4" H 4200 5667 50  0000 C CNN
-F 1 "74HC04" H 4200 5576 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 5350 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 5350 50  0001 C CNN
-	1    4200 5350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:BCX56 Q4
 U 1 1 6171FDC6
 P 7100 5350
@@ -494,8 +483,6 @@ Wire Wire Line
 	4500 2500 6900 2500
 Wire Wire Line
 	2500 4750 3100 4750
-Wire Wire Line
-	3650 5350 3900 5350
 Wire Wire Line
 	3650 5350 3650 4750
 Connection ~ 3650 4750
@@ -610,7 +597,7 @@ U 1 1 61794CD0
 P 3300 1900
 F 0 "R6" V 3093 1900 50  0000 C CNN
 F 1 "R" V 3184 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 3230 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3230 1900 50  0001 C CNN
 F 3 "~" H 3300 1900 50  0001 C CNN
 	1    3300 1900
 	0    1    1    0   
@@ -623,7 +610,7 @@ U 1 1 61795E25
 P 3250 4750
 F 0 "R5" V 3043 4750 50  0000 C CNN
 F 1 "R" V 3134 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder" V 3180 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3180 4750 50  0001 C CNN
 F 3 "~" H 3250 4750 50  0001 C CNN
 	1    3250 4750
 	0    1    1    0   
@@ -643,4 +630,17 @@ F 3 "~" V 8100 1110 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 1050 8400 1050
+$Comp
+L 74xx:74HC04 U3
+U 2 1 616C7E94
+P 4200 5350
+F 0 "U3" H 4200 5667 50  0000 C CNN
+F 1 "74HC04" H 4200 5576 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 5350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 5350 50  0001 C CNN
+	2    4200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5350 3900 5350
 $EndSCHEMATC
