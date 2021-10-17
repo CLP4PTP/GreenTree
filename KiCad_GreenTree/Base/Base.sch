@@ -86,7 +86,7 @@ Connection ~ 2950 2050
 Wire Wire Line
 	2000 1700 2000 1350
 Wire Wire Line
-	2000 1050 2950 1050
+	2000 1050 2350 1050
 Wire Wire Line
 	2950 1050 2950 1300
 Connection ~ 2000 1050
@@ -242,8 +242,6 @@ Connection ~ 2950 4900
 Wire Wire Line
 	2000 4550 2000 4200
 Wire Wire Line
-	2000 3900 2950 3900
-Wire Wire Line
 	2950 3900 2950 4150
 Connection ~ 2000 3900
 Wire Wire Line
@@ -362,19 +360,6 @@ Wire Wire Line
 	8700 1050 8800 1050
 Wire Wire Line
 	9100 1050 9200 1050
-Wire Wire Line
-	10450 950  10450 850 
-$Comp
-L power:VCC #PWR0109
-U 1 1 61700D94
-P 10450 850
-F 0 "#PWR0109" H 10450 700 50  0001 C CNN
-F 1 "VCC" H 10465 1023 50  0000 C CNN
-F 2 "" H 10450 850 50  0001 C CNN
-F 3 "" H 10450 850 50  0001 C CNN
-	1    10450 850 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 61701C4C
@@ -568,19 +553,6 @@ Wire Wire Line
 	7200 5150 7200 5000
 Text Notes 6500 3050 0    50   ~ 0
 Vorwiderstand vor jeder LED? oder hier?
-$Comp
-L Switch:SW_DPDT_x2 SW1
-U 1 1 6176C986
-P 9950 1050
-F 0 "SW1" H 9950 1335 50  0000 C CNN
-F 1 "SW_DPDT_x2" H 9950 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG2219_DPDT_Angled" H 9950 1050 50  0001 C CNN
-F 3 "~" H 9950 1050 50  0001 C CNN
-	1    9950 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 950  10450 950 
 Wire Wire Line
 	9650 1050 9750 1050
 Wire Wire Line
@@ -588,9 +560,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 1050 9500 1050
 Connection ~ 9650 1050
-Wire Wire Line
-	10150 1150 10450 1150
-NoConn ~ 10450 1150
 $Comp
 L Device:R R6
 U 1 1 61794CD0
@@ -643,4 +612,93 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 535
 $EndComp
 Wire Wire Line
 	3650 5350 3900 5350
+Wire Wire Line
+	10150 950  10450 950 
+$Comp
+L power:VCC #PWR0109
+U 1 1 61700D94
+P 10450 850
+F 0 "#PWR0109" H 10450 700 50  0001 C CNN
+F 1 "VCC" H 10465 1023 50  0000 C CNN
+F 2 "" H 10450 850 50  0001 C CNN
+F 3 "" H 10450 850 50  0001 C CNN
+	1    10450 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 950  10450 850 
+NoConn ~ 10450 1150
+Wire Wire Line
+	10150 1150 10450 1150
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 6176C986
+P 9950 1050
+F 0 "SW1" H 9950 1335 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 9950 1244 50  0000 C CNN
+F 2 "Bib:Schiebeschalter" H 9950 1050 50  0001 C CNN
+F 3 "~" H 9950 1050 50  0001 C CNN
+	1    9950 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61740863
+P 2350 1550
+F 0 "#PWR02" H 2350 1300 50  0001 C CNN
+F 1 "GND" H 2355 1377 50  0000 C CNN
+F 2 "" H 2350 1550 50  0001 C CNN
+F 3 "" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6174346D
+P 2350 1300
+F 0 "C6" H 2465 1346 50  0000 L CNN
+F 1 "100n" H 2465 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2388 1150 50  0001 C CNN
+F 3 "~" H 2350 1300 50  0001 C CNN
+	1    2350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1150 2350 1050
+Connection ~ 2350 1050
+Wire Wire Line
+	2350 1050 2950 1050
+Wire Wire Line
+	2350 1450 2350 1550
+$Comp
+L power:GND #PWR01
+U 1 1 6174C201
+P 2300 4400
+F 0 "#PWR01" H 2300 4150 50  0001 C CNN
+F 1 "GND" H 2305 4227 50  0000 C CNN
+F 2 "" H 2300 4400 50  0001 C CNN
+F 3 "" H 2300 4400 50  0001 C CNN
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6174C207
+P 2300 4150
+F 0 "C5" H 2415 4196 50  0000 L CNN
+F 1 "100n" H 2415 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2338 4000 50  0001 C CNN
+F 3 "~" H 2300 4150 50  0001 C CNN
+	1    2300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4300 2300 4400
+Wire Wire Line
+	2000 3900 2300 3900
+Wire Wire Line
+	2300 4000 2300 3900
+Connection ~ 2300 3900
+Wire Wire Line
+	2300 3900 2950 3900
 $EndSCHEMATC
