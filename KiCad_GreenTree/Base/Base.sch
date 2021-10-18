@@ -324,57 +324,31 @@ $EndComp
 Wire Wire Line
 	2950 5700 2950 5600
 $Comp
-L Device:Battery_Cell BT1
-U 1 1 616E4B6E
-P 8500 1050
-F 0 "BT1" V 8245 1100 50  0000 C CNN
-F 1 "1.5" V 8336 1100 50  0000 C CNN
-F 2 "Bib:Batteriehalter_für_1_Mignonzelle(AA)" V 8500 1110 50  0001 C CNN
-F 3 "~" V 8500 1110 50  0001 C CNN
-	1    8500 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 616FB8AA
-P 8900 1050
-F 0 "BT2" V 8645 1100 50  0000 C CNN
-F 1 "1.5" V 8736 1100 50  0000 C CNN
-F 2 "Bib:Batteriehalter_für_1_Mignonzelle(AA)" V 8900 1110 50  0001 C CNN
-F 3 "~" V 8900 1110 50  0001 C CNN
-	1    8900 1050
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Battery_Cell BT3
 U 1 1 616FC779
 P 9300 1050
 F 0 "BT3" V 9045 1100 50  0000 C CNN
-F 1 "1.5" V 9136 1100 50  0000 C CNN
-F 2 "Bib:Batteriehalter_für_1_Mignonzelle(AA)" V 9300 1110 50  0001 C CNN
+F 1 "9V" V 9136 1100 50  0000 C CNN
+F 2 "Bib:9V_Holder" V 9300 1110 50  0001 C CNN
 F 3 "~" V 9300 1110 50  0001 C CNN
 	1    9300 1050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8700 1050 8800 1050
-Wire Wire Line
-	9100 1050 9200 1050
 $Comp
 L power:GND #PWR0110
 U 1 1 61701C4C
-P 7850 1200
-F 0 "#PWR0110" H 7850 950 50  0001 C CNN
-F 1 "GND" H 7855 1027 50  0000 C CNN
-F 2 "" H 7850 1200 50  0001 C CNN
-F 3 "" H 7850 1200 50  0001 C CNN
-	1    7850 1200
+P 9050 1200
+F 0 "#PWR0110" H 9050 950 50  0001 C CNN
+F 1 "GND" H 9055 1027 50  0000 C CNN
+F 2 "" H 9050 1200 50  0001 C CNN
+F 3 "" H 9050 1200 50  0001 C CNN
+	1    9050 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 1200 7850 1050
+	9050 1200 9050 1050
 Wire Wire Line
-	7850 1050 8000 1050
+	9050 1050 9200 1050
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 61703976
@@ -389,17 +363,17 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 617056E3
-P 7850 900
-F 0 "#FLG0102" H 7850 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 7850 1073 50  0000 C CNN
-F 2 "" H 7850 900 50  0001 C CNN
-F 3 "~" H 7850 900 50  0001 C CNN
-	1    7850 900 
+P 9050 900
+F 0 "#FLG0102" H 9050 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 1073 50  0000 C CNN
+F 2 "" H 9050 900 50  0001 C CNN
+F 3 "~" H 9050 900 50  0001 C CNN
+	1    9050 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 1050 7850 900 
-Connection ~ 7850 1050
+	9050 1050 9050 900 
+Connection ~ 9050 1050
 $Comp
 L Transistor_BJT:BCX56 Q1
 U 1 1 6170AE13
@@ -409,17 +383,6 @@ F 1 "BCX56" H 5991 1855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 6000 1825 50  0001 L CIN
 F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H 5800 1900 50  0001 L CNN
 	1    5800 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC04 U3
-U 1 1 61710E60
-P 4200 2500
-F 0 "U3" H 4200 2817 50  0000 C CNN
-F 1 "74HC04" H 4200 2726 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 2500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 2500 50  0001 C CNN
-	1    4200 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -457,8 +420,6 @@ F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H
 $EndComp
 Wire Wire Line
 	2500 1900 3150 1900
-Wire Wire Line
-	3900 2500 3650 2500
 Wire Wire Line
 	3650 2500 3650 1900
 Connection ~ 3650 1900
@@ -586,30 +547,6 @@ F 3 "~" H 3250 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 4750 3650 4750
-$Comp
-L Device:Battery_Cell BT4
-U 1 1 6179C9D5
-P 8100 1050
-F 0 "BT4" V 7845 1100 50  0000 C CNN
-F 1 "1.5" V 7936 1100 50  0000 C CNN
-F 2 "Bib:Batteriehalter_für_1_Mignonzelle(AA)" V 8100 1110 50  0001 C CNN
-F 3 "~" V 8100 1110 50  0001 C CNN
-	1    8100 1050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8300 1050 8400 1050
-$Comp
-L 74xx:74HC04 U3
-U 2 1 616C7E94
-P 4200 5350
-F 0 "U3" H 4200 5667 50  0000 C CNN
-F 1 "74HC04" H 4200 5576 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 5350 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 5350 50  0001 C CNN
-	2    4200 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 5350 3900 5350
 Wire Wire Line
@@ -701,4 +638,67 @@ Wire Wire Line
 Connection ~ 2300 3900
 Wire Wire Line
 	2300 3900 2950 3900
+Text Notes 9450 1350 0    50   ~ 0
+Verpolungsschutz?
+$Comp
+L 74xx:74HC04 U3
+U 7 1 6170E68B
+P 8350 1250
+F 0 "U3" H 8580 1296 50  0000 L CNN
+F 1 "74HC04" H 8580 1205 50  0000 L CNN
+F 2 "" H 8350 1250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8350 1250 50  0001 C CNN
+	7    8350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 61712EF3
+P 8350 700
+F 0 "#PWR0115" H 8350 550 50  0001 C CNN
+F 1 "VCC" H 8365 873 50  0000 C CNN
+F 2 "" H 8350 700 50  0001 C CNN
+F 3 "" H 8350 700 50  0001 C CNN
+	1    8350 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 6171661A
+P 8350 1800
+F 0 "#PWR0116" H 8350 1550 50  0001 C CNN
+F 1 "GND" H 8355 1627 50  0000 C CNN
+F 2 "" H 8350 1800 50  0001 C CNN
+F 3 "" H 8350 1800 50  0001 C CNN
+	1    8350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1800 8350 1750
+$Comp
+L 74xx:74HC04 U3
+U 2 1 616C7E94
+P 4200 5350
+F 0 "U3" H 4200 5667 50  0000 C CNN
+F 1 "74HC04" H 4200 5576 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 5350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 5350 50  0001 C CNN
+	2    4200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2500 3650 2500
+$Comp
+L 74xx:74HC04 U3
+U 1 1 61710E60
+P 4200 2500
+F 0 "U3" H 4200 2817 50  0000 C CNN
+F 1 "74HC04" H 4200 2726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 2500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 750  8350 700 
 $EndSCHEMATC
