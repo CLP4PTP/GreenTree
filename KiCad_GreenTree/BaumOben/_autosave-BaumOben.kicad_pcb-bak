@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 37)
+    (drawings 43)
     (tracks 173)
     (zones 0)
     (modules 42)
@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -59,7 +59,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.05)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FF677F7)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -1746,6 +1746,13 @@
     )
   )
 
+  (gr_line (start 137.56929 124.774417) (end 137.55039 124.742792) (layer Edge.Cuts) (width 0.05) (tstamp 616E9F2E))
+  (gr_line (start 130.117363 99.543399) (end 130.11704 99.542932) (layer Edge.Cuts) (width 0.05) (tstamp 616E9BE1))
+  (gr_line (start 130.117363 99.543399) (end 130.11704 99.542932) (layer Edge.Cuts) (width 0.05) (tstamp 616E9BE0))
+  (gr_line (start 86.224748 101.96179) (end 86.223886 101.956959) (layer Edge.Cuts) (width 0.05) (tstamp 616E9AE1))
+  (gr_line (start 81.407 75.7555) (end 81.407001 75.755499) (layer Edge.Cuts) (width 0.05) (tstamp 616E9AE0))
+  (gr_line (start 81.407001 75.755499) (end 81.407 75.7555) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 91.110269 75.953228) (end 91.112509 75.960315) (layer Edge.Cuts) (width 0.05) (tstamp 616E99E3))
   (gr_line (start 98.425 146.685) (end 99.695 146.685) (layer Edge.Cuts) (width 0.05) (tstamp 616D87B3))
   (gr_line (start 98.425 149.987) (end 98.425 146.685) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 94.869 149.987) (end 98.425 149.987) (layer Edge.Cuts) (width 0.05))
@@ -1760,7 +1767,6 @@
   (gr_line (start 101.727 146.685) (end 101.6635 99.314) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 99.695 146.685) (end 99.695 99.314) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 102.9335 146.685) (end 101.727 146.685) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 137.56929 124.774417) (end 137.55039 124.742792) (layer Edge.Cuts) (width 0.05) (tstamp 616C6630))
   (gr_arc (start 100.076 62.0395) (end 108.648499 134.619999) (angle -24.12848242) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 100.076 62.0395) (end 64.198502 125.666498) (angle -23.37976228) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 106.426 146.685) (end 110.9345 146.685) (layer Edge.Cuts) (width 0.05) (tstamp 616C661C))
