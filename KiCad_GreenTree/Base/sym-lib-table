@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name EG2219)(type Legacy)(uri C:/Users/kbhan/Downloads/EG2219/EG2219.lib)(options "")(descr ""))
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/Bib.pretty/New_Library.lib)(options "")(descr ""))
 )
