@@ -707,11 +707,11 @@ Wire Wire Line
 	7450 5700 7200 5700
 Wire Wire Line
 	7200 5700 7200 5550
-Text Label 7450 2850 0    50   ~ 0
+Text Label 6150 5100 0    50   ~ 0
 LED_MATRIX_2
 Text Label 6150 2250 0    50   ~ 0
 LED_MATRIX_1
-Text Label 6150 5100 0    50   ~ 0
+Text Label 7450 2850 0    50   ~ 0
 LED_MATRIX_3
 Text Label 7450 5700 0    50   ~ 0
 LED_MATRIX_4
