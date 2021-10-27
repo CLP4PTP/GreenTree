@@ -7,20 +7,20 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.6)-1"
     },
-    "CreationDate":  "2021-10-27T11:50:58+02:00"
+    "CreationDate":  "2021-10-27T12:16:38+02:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "_autosave-BaumOben",
-      "GUID": "5f617574-6f73-4617-9665-2d4261756d4f",
+      "Name": "BaumUnten",
+      "GUID": "4261756d-556e-4746-956e-2e6b69636164",
       "Revision": "rev?"
     },
     "Size":
     {
       "X": 73.421,
-      "Y": 98.348
+      "Y": 97.180
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "_autosave-BaumOben-F_Cu.gbr",
+      "Path":  "BaumUnten-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-B_Cu.gbr",
+      "Path":  "BaumUnten-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-F_Paste.gbr",
+      "Path":  "BaumUnten-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-B_Paste.gbr",
+      "Path":  "BaumUnten-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-F_SilkS.gbr",
+      "Path":  "BaumUnten-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-B_SilkS.gbr",
+      "Path":  "BaumUnten-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "_autosave-BaumOben-F_Mask.gbr",
+      "Path":  "BaumUnten-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "_autosave-BaumOben-B_Mask.gbr",
+      "Path":  "BaumUnten-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "_autosave-BaumOben-Edge_Cuts.gbr",
+      "Path":  "BaumUnten-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
