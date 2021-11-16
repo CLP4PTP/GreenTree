@@ -299,29 +299,14 @@ Wire Wire Line
 $Comp
 L Device:Battery_Cell BT3
 U 1 1 616FC779
-P 9300 1050
-F 0 "BT3" V 9045 1100 50  0000 C CNN
-F 1 "9V" V 9136 1100 50  0000 C CNN
-F 2 "Bib:9V ohne Loecher" V 9300 1110 50  0001 C CNN
-F 3 "~" V 9300 1110 50  0001 C CNN
-	1    9300 1050
-	0    1    1    0   
+P 9500 1050
+F 0 "BT3" V 9245 1100 50  0000 C CNN
+F 1 "9V" V 9336 1100 50  0000 C CNN
+F 2 "Bib:9V ohne Loecher" V 9500 1110 50  0001 C CNN
+F 3 "~" V 9500 1110 50  0001 C CNN
+	1    9500 1050
+	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 61701C4C
-P 9050 1200
-F 0 "#PWR0110" H 9050 950 50  0001 C CNN
-F 1 "GND" H 9055 1027 50  0000 C CNN
-F 2 "" H 9050 1200 50  0001 C CNN
-F 3 "" H 9050 1200 50  0001 C CNN
-	1    9050 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 1200 9050 1050
-Wire Wire Line
-	9050 1050 9200 1050
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 61703976
@@ -346,7 +331,6 @@ F 3 "~" H 9050 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 1050 9050 900 
-Connection ~ 9050 1050
 $Comp
 L Transistor_BJT:BCX56 Q1
 U 1 1 6170AE13
@@ -392,117 +376,43 @@ F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 1900 3150 1900
-Wire Wire Line
 	3650 2500 3650 1900
 Connection ~ 3650 1900
 Wire Wire Line
-	3650 1900 5600 1900
-Wire Wire Line
-	2500 4750 3100 4750
+	3650 1900 3900 1900
 Wire Wire Line
 	3650 5350 3650 4750
 Connection ~ 3650 4750
 Wire Wire Line
-	3650 4750 5600 4750
-$Comp
-L power:VCC #PWR0111
-U 1 1 6175E383
-P 5900 4400
-F 0 "#PWR0111" H 5900 4250 50  0001 C CNN
-F 1 "VCC" H 5915 4573 50  0000 C CNN
-F 2 "" H 5900 4400 50  0001 C CNN
-F 3 "" H 5900 4400 50  0001 C CNN
-	1    5900 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0112
-U 1 1 6175F885
-P 7200 5000
-F 0 "#PWR0112" H 7200 4850 50  0001 C CNN
-F 1 "VCC" H 7215 5173 50  0000 C CNN
-F 2 "" H 7200 5000 50  0001 C CNN
-F 3 "" H 7200 5000 50  0001 C CNN
-	1    7200 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0113
-U 1 1 6176126D
-P 7200 2150
-F 0 "#PWR0113" H 7200 2000 50  0001 C CNN
-F 1 "VCC" H 7215 2323 50  0000 C CNN
-F 2 "" H 7200 2150 50  0001 C CNN
-F 3 "" H 7200 2150 50  0001 C CNN
-	1    7200 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0114
-U 1 1 61762D08
-P 5900 1550
-F 0 "#PWR0114" H 5900 1400 50  0001 C CNN
-F 1 "VCC" H 5915 1723 50  0000 C CNN
-F 2 "" H 5900 1550 50  0001 C CNN
-F 3 "" H 5900 1550 50  0001 C CNN
-	1    5900 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2300 7200 2150
-Wire Wire Line
-	5900 1700 5900 1550
-Wire Wire Line
-	5900 4550 5900 4400
-Wire Wire Line
-	7200 5150 7200 5000
+	3650 4750 3900 4750
 Wire Wire Line
 	9650 1050 9750 1050
 Wire Wire Line
 	9650 750  9650 1050
-Wire Wire Line
-	9650 1050 9500 1050
-Connection ~ 9650 1050
 $Comp
 L Device:R R6
 U 1 1 61794CD0
-P 3300 1900
-F 0 "R6" V 3093 1900 50  0000 C CNN
-F 1 "1k" V 3184 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3230 1900 50  0001 C CNN
-F 3 "~" H 3300 1900 50  0001 C CNN
-	1    3300 1900
+P 4050 1900
+F 0 "R6" V 3843 1900 50  0000 C CNN
+F 1 "1k" V 3934 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3980 1900 50  0001 C CNN
+F 3 "~" H 4050 1900 50  0001 C CNN
+	1    4050 1900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3450 1900 3650 1900
 $Comp
 L Device:R R5
 U 1 1 61795E25
-P 3250 4750
-F 0 "R5" V 3043 4750 50  0000 C CNN
-F 1 "1k" V 3134 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3180 4750 50  0001 C CNN
-F 3 "~" H 3250 4750 50  0001 C CNN
-	1    3250 4750
+P 4050 4750
+F 0 "R5" V 3843 4750 50  0000 C CNN
+F 1 "1k" V 3934 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3980 4750 50  0001 C CNN
+F 3 "~" H 4050 4750 50  0001 C CNN
+	1    4050 4750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 4750 3650 4750
-Wire Wire Line
 	3650 5350 3900 5350
-$Comp
-L power:VCC #PWR0109
-U 1 1 61700D94
-P 10450 850
-F 0 "#PWR0109" H 10450 700 50  0001 C CNN
-F 1 "VCC" H 10465 1023 50  0000 C CNN
-F 2 "" H 10450 850 50  0001 C CNN
-F 3 "" H 10450 850 50  0001 C CNN
-	1    10450 850 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_DPDT_x2 SW1
 U 1 1 6176C986
@@ -574,15 +484,13 @@ Wire Wire Line
 Connection ~ 2300 3900
 Wire Wire Line
 	2300 3900 2950 3900
-Text Notes 9000 1550 0    50   ~ 0
-Verpolungsschutz?
 $Comp
 L 74xx:74HC04 U3
 U 7 1 6170E68B
 P 8350 1300
 F 0 "U3" H 8580 1346 50  0000 L CNN
 F 1 "74HC04" H 8580 1255 50  0000 L CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 8350 1300 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8350 1300 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8350 1300 50  0001 C CNN
 	7    8350 1300
 	1    0    0    -1  
@@ -606,7 +514,7 @@ U 2 1 616C7E94
 P 4200 5350
 F 0 "U3" H 4200 5667 50  0000 C CNN
 F 1 "74HC04" H 4200 5576 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 5350 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 5350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 5350 50  0001 C CNN
 	2    4200 5350
 	1    0    0    -1  
@@ -619,7 +527,7 @@ U 1 1 61710E60
 P 4200 2500
 F 0 "U3" H 4200 2817 50  0000 C CNN
 F 1 "74HC04" H 4200 2726 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 4200 2500 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 2500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4200 2500 50  0001 C CNN
 	1    4200 2500
 	1    0    0    -1  
@@ -671,20 +579,12 @@ $EndComp
 Wire Wire Line
 	5900 4950 5900 5100
 Wire Wire Line
-	5900 5100 6150 5100
-Wire Wire Line
 	850  1000 850  1050
 Wire Wire Line
 	850  1050 2000 1050
 Connection ~ 2000 1050
 Wire Wire Line
 	7200 2700 7200 2850
-Wire Wire Line
-	7200 2850 7450 2850
-Wire Wire Line
-	10150 950  10450 950 
-Wire Wire Line
-	10450 950  10450 850 
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 61739FC1
@@ -697,23 +597,16 @@ F 3 "~" H 10800 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 950  10800 950 
-Wire Wire Line
 	10800 950  10800 850 
-Connection ~ 10450 950 
-Wire Wire Line
-	5900 2250 6150 2250
-Wire Wire Line
-	7450 5700 7200 5700
 Wire Wire Line
 	7200 5700 7200 5550
-Text Label 6150 5100 0    50   ~ 0
+Text Label 6150 4400 0    50   ~ 0
 LED_MATRIX_2
-Text Label 6150 2250 0    50   ~ 0
+Text Label 6000 1600 0    50   ~ 0
 LED_MATRIX_1
-Text Label 7450 2850 0    50   ~ 0
+Text Label 7350 2050 0    50   ~ 0
 LED_MATRIX_3
-Text Label 7450 5700 0    50   ~ 0
+Text Label 7350 4900 0    50   ~ 0
 LED_MATRIX_4
 Wire Wire Line
 	5900 2250 5900 2100
@@ -728,26 +621,12 @@ F 3 "" H 9200 3300 50  0001 C CNN
 	1    8800 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 6175CED1
-P 9850 4350
-F 0 "#PWR0117" H 9850 4100 50  0001 C CNN
-F 1 "GND" H 9855 4177 50  0000 C CNN
-F 2 "" H 9850 4350 50  0001 C CNN
-F 3 "" H 9850 4350 50  0001 C CNN
-	1    9850 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 4350 9850 4250
 Wire Wire Line
 	9850 4250 9750 4250
 Wire Wire Line
 	9850 4250 9850 4150
 Wire Wire Line
 	9850 4150 9750 4150
-Connection ~ 9850 4250
 Wire Wire Line
 	9850 4150 9850 4050
 Wire Wire Line
@@ -804,78 +683,6 @@ Wire Wire Line
 Text Notes 10050 1550 0    50   ~ 0
 1: LEDs blinken\n3: LEDs leuchten dauerhaft\n
 $Comp
-L power:+9V #PWR0119
-U 1 1 617CD3A8
-P 8650 3200
-F 0 "#PWR0119" H 8650 3050 50  0001 C CNN
-F 1 "+9V" H 8665 3373 50  0000 C CNN
-F 2 "" H 8650 3200 50  0001 C CNN
-F 3 "" H 8650 3200 50  0001 C CNN
-	1    8650 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+9V #PWR0120
-U 1 1 617D0361
-P 8500 3200
-F 0 "#PWR0120" H 8500 3050 50  0001 C CNN
-F 1 "+9V" H 8515 3373 50  0000 C CNN
-F 2 "" H 8500 3200 50  0001 C CNN
-F 3 "" H 8500 3200 50  0001 C CNN
-	1    8500 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+9V #PWR0121
-U 1 1 617D31B5
-P 8350 3200
-F 0 "#PWR0121" H 8350 3050 50  0001 C CNN
-F 1 "+9V" H 8365 3373 50  0000 C CNN
-F 2 "" H 8350 3200 50  0001 C CNN
-F 3 "" H 8350 3200 50  0001 C CNN
-	1    8350 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+9V #PWR0122
-U 1 1 617D5F5C
-P 8200 3200
-F 0 "#PWR0122" H 8200 3050 50  0001 C CNN
-F 1 "+9V" H 8215 3373 50  0000 C CNN
-F 2 "" H 8200 3200 50  0001 C CNN
-F 3 "" H 8200 3200 50  0001 C CNN
-	1    8200 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 3550 8500 4050
-Connection ~ 8500 4050
-Wire Wire Line
-	8500 4050 8700 4050
-Wire Wire Line
-	8350 3550 8350 4150
-Connection ~ 8350 4150
-Wire Wire Line
-	8350 4150 8700 4150
-Wire Wire Line
-	7900 4050 8500 4050
-Wire Wire Line
-	7900 4150 8350 4150
-Wire Wire Line
-	7900 4250 8200 4250
-Wire Wire Line
-	8200 3550 8200 4250
-Connection ~ 8200 4250
-Wire Wire Line
-	8200 4250 8700 4250
-Wire Wire Line
-	7900 3950 8650 3950
-Wire Wire Line
-	8650 3550 8650 3950
-Connection ~ 8650 3950
-Wire Wire Line
-	8650 3950 8700 3950
-$Comp
 L power:GND #PWR0123
 U 1 1 61837F6F
 P 7800 1300
@@ -908,58 +715,6 @@ Wire Wire Line
 Connection ~ 8350 750 
 Wire Wire Line
 	8350 750  8350 800 
-$Comp
-L Device:D D4
-U 1 1 6185280C
-P 8650 3400
-F 0 "D4" V 8696 3320 50  0000 R CNN
-F 1 "STPS 1L30A STM" V 8605 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 8650 3400 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8650 3400 50  0001 C CNN
-	1    8650 3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8650 3250 8650 3200
-Wire Wire Line
-	8500 3250 8500 3200
-Wire Wire Line
-	8350 3250 8350 3200
-Wire Wire Line
-	8200 3250 8200 3200
-$Comp
-L Device:D D3
-U 1 1 61883222
-P 8500 3400
-F 0 "D3" V 8546 3320 50  0000 R CNN
-F 1 "STPS 1L30A STM" V 8455 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 8500 3400 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8500 3400 50  0001 C CNN
-	1    8500 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 6188700E
-P 8350 3400
-F 0 "D2" V 8396 3320 50  0000 R CNN
-F 1 "STPS 1L30A STM" V 8305 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 8350 3400 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8350 3400 50  0001 C CNN
-	1    8350 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D D1
-U 1 1 6188AD8C
-P 8200 3400
-F 0 "D1" V 8246 3320 50  0000 R CNN
-F 1 "STPS 1L30A STM" V 8155 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 8200 3400 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8200 3400 50  0001 C CNN
-	1    8200 3400
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Regulator_Linear:L78L05_TO92 U4
 U 1 1 618CD78C
@@ -1133,6 +888,266 @@ F 1 "+5V" H 865 4023 50  0000 C CNN
 F 2 "" H 850 3850 50  0001 C CNN
 F 3 "" H 850 3850 50  0001 C CNN
 	1    850  3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1900 5600 1900
+Wire Wire Line
+	2500 1900 3650 1900
+Wire Wire Line
+	4200 4750 5600 4750
+Wire Wire Line
+	2500 4750 3650 4750
+Wire Wire Line
+	5900 4550 5900 4400
+Wire Wire Line
+	5900 4400 6150 4400
+Wire Wire Line
+	7200 4900 7350 4900
+Wire Wire Line
+	7200 4900 7200 5150
+Wire Wire Line
+	5900 1700 5900 1600
+Wire Wire Line
+	5900 1600 6000 1600
+Wire Wire Line
+	7200 2050 7350 2050
+Wire Wire Line
+	7200 2050 7200 2300
+$Comp
+L power:GND #PWR0111
+U 1 1 61990DCC
+P 6250 2300
+F 0 "#PWR0111" H 6250 2050 50  0001 C CNN
+F 1 "GND" H 6255 2127 50  0000 C CNN
+F 2 "" H 6250 2300 50  0001 C CNN
+F 3 "" H 6250 2300 50  0001 C CNN
+	1    6250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 61995F42
+P 7600 2900
+F 0 "#PWR0112" H 7600 2650 50  0001 C CNN
+F 1 "GND" H 7605 2727 50  0000 C CNN
+F 2 "" H 7600 2900 50  0001 C CNN
+F 3 "" H 7600 2900 50  0001 C CNN
+	1    7600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 6199AF9F
+P 6300 5150
+F 0 "#PWR0113" H 6300 4900 50  0001 C CNN
+F 1 "GND" H 6305 4977 50  0000 C CNN
+F 2 "" H 6300 5150 50  0001 C CNN
+F 3 "" H 6300 5150 50  0001 C CNN
+	1    6300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 619A01BC
+P 7550 5750
+F 0 "#PWR0114" H 7550 5500 50  0001 C CNN
+F 1 "GND" H 7555 5577 50  0000 C CNN
+F 2 "" H 7550 5750 50  0001 C CNN
+F 3 "" H 7550 5750 50  0001 C CNN
+	1    7550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5700 7550 5750
+Wire Wire Line
+	7200 5700 7550 5700
+Wire Wire Line
+	6300 5100 6300 5150
+Wire Wire Line
+	5900 5100 6300 5100
+Wire Wire Line
+	6250 2250 6250 2300
+Wire Wire Line
+	5900 2250 6250 2250
+Wire Wire Line
+	7600 2850 7600 2900
+Wire Wire Line
+	7200 2850 7600 2850
+$Comp
+L power:VCC #PWR0117
+U 1 1 619C37F5
+P 9850 3750
+F 0 "#PWR0117" H 9850 3600 50  0001 C CNN
+F 1 "VCC" H 9865 3923 50  0000 C CNN
+F 2 "" H 9850 3750 50  0001 C CNN
+F 3 "" H 9850 3750 50  0001 C CNN
+	1    9850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3950 9850 3750
+Connection ~ 9850 3950
+Wire Wire Line
+	7900 4050 8450 4050
+Wire Wire Line
+	7900 4150 8300 4150
+Wire Wire Line
+	7900 4250 8150 4250
+Wire Wire Line
+	7900 3950 8600 3950
+$Comp
+L Device:D D1
+U 1 1 6188AD8C
+P 8150 4500
+F 0 "D1" V 8196 4420 50  0000 R CNN
+F 1 "STPS 1L30A STM" V 8105 4420 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 8150 4500 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8150 4500 50  0001 C CNN
+	1    8150 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 6188700E
+P 8300 4500
+F 0 "D2" V 8346 4420 50  0000 R CNN
+F 1 "STPS 1L30A STM" V 8255 4420 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 8300 4500 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8300 4500 50  0001 C CNN
+	1    8300 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 61883222
+P 8450 4500
+F 0 "D3" V 8496 4420 50  0000 R CNN
+F 1 "STPS 1L30A STM" V 8405 4420 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 8450 4500 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8450 4500 50  0001 C CNN
+	1    8450 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 6185280C
+P 8600 4500
+F 0 "D4" V 8646 4420 50  0000 R CNN
+F 1 "STPS 1L30A STM" V 8555 4420 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 8600 4500 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/STPS1L30X_ENG_TDS.pdf" H 8600 4500 50  0001 C CNN
+	1    8600 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 4350 8600 3950
+Connection ~ 8600 3950
+Wire Wire Line
+	8600 3950 8700 3950
+Wire Wire Line
+	8450 4350 8450 4050
+Connection ~ 8450 4050
+Wire Wire Line
+	8450 4050 8700 4050
+Wire Wire Line
+	8300 4350 8300 4150
+Connection ~ 8300 4150
+Wire Wire Line
+	8300 4150 8700 4150
+Wire Wire Line
+	8150 4350 8150 4250
+Connection ~ 8150 4250
+Wire Wire Line
+	8150 4250 8700 4250
+$Comp
+L power:GND #PWR0119
+U 1 1 61A14096
+P 8150 4750
+F 0 "#PWR0119" H 8150 4500 50  0001 C CNN
+F 1 "GND" H 8155 4577 50  0000 C CNN
+F 2 "" H 8150 4750 50  0001 C CNN
+F 3 "" H 8150 4750 50  0001 C CNN
+	1    8150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 61A1462E
+P 8300 4750
+F 0 "#PWR0120" H 8300 4500 50  0001 C CNN
+F 1 "GND" H 8305 4577 50  0000 C CNN
+F 2 "" H 8300 4750 50  0001 C CNN
+F 3 "" H 8300 4750 50  0001 C CNN
+	1    8300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 61A195D5
+P 8450 4750
+F 0 "#PWR0121" H 8450 4500 50  0001 C CNN
+F 1 "GND" H 8455 4577 50  0000 C CNN
+F 2 "" H 8450 4750 50  0001 C CNN
+F 3 "" H 8450 4750 50  0001 C CNN
+	1    8450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 61A1E629
+P 8600 4750
+F 0 "#PWR0122" H 8600 4500 50  0001 C CNN
+F 1 "GND" H 8605 4577 50  0000 C CNN
+F 2 "" H 8600 4750 50  0001 C CNN
+F 3 "" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4750 8150 4650
+Wire Wire Line
+	8300 4750 8300 4650
+Wire Wire Line
+	8450 4750 8450 4650
+Wire Wire Line
+	8600 4750 8600 4650
+Connection ~ 10450 950 
+Wire Wire Line
+	10450 950  10800 950 
+Wire Wire Line
+	10150 950  10450 950 
+Wire Wire Line
+	10450 950  10450 850 
+$Comp
+L power:VCC #PWR0109
+U 1 1 61700D94
+P 10450 850
+F 0 "#PWR0109" H 10450 700 50  0001 C CNN
+F 1 "VCC" H 10465 1023 50  0000 C CNN
+F 2 "" H 10450 850 50  0001 C CNN
+F 3 "" H 10450 850 50  0001 C CNN
+	1    10450 850 
+	1    0    0    -1  
+$EndComp
+Text Notes 9000 1550 0    50   ~ 0
+Verpolungsschutz?
+Connection ~ 9200 1050
+Connection ~ 9150 1050
+Connection ~ 9050 1050
+Wire Wire Line
+	9050 1050 9300 1050
+Wire Wire Line
+	9050 1200 9050 1050
+$Comp
+L power:GND #PWR0110
+U 1 1 61701C4C
+P 9050 1200
+F 0 "#PWR0110" H 9050 950 50  0001 C CNN
+F 1 "GND" H 9055 1027 50  0000 C CNN
+F 2 "" H 9050 1200 50  0001 C CNN
+F 3 "" H 9050 1200 50  0001 C CNN
+	1    9050 1200
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
