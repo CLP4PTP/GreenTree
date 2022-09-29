@@ -12,3 +12,6 @@ Probleme:
   Lösung in V1.0: Eine Batterie pro LED-Kette bei Grün, Gelb und Rot überbrücken. In Zukunft Lösung hierfür finden bzw. Schaltung richtig dimensionieren
 - Extrem großer Lötaufwand! Eventuell Bestückung z.B. von JLCPCB
 
+![IMG_20211219_224517](https://user-images.githubusercontent.com/51613383/193067002-fb61ff2a-fda6-4b54-9fa0-1502099d0e87.jpg)
+![IMG_20211222_133708](https://user-images.githubusercontent.com/51613383/193067007-739ff5ad-d632-4337-afd8-efaa5bb381a2.jpg)
+![IMG_20211219_224450](https://user-images.githubusercontent.com/51613383/193067017-2c4030a1-4244-4921-a12a-619918cf3859.jpg)
